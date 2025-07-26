@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p align="center"><img src="Imagenes/fotoCV.jpeg" alt="Jesus Eduardo Jara Bernal" width="20%" class="fotoCV"></p>
-    <header>
-        <h1 align="center">Jesus Eduardo Jara Bernal</h1>
+    <header class="perfil-header">
+        <img src="Imagenes/fotoCV.jpeg" alt="Jesus Eduardo Jara Bernal" class="fotoCV">
+        <div class="nombre-cargo">
+            <h1>Jesus Eduardo Jara Bernal</h1>
+            <h2>Ingeniero Mecatrónico</h2>
+        </div>
     </header>
-    <hr>
+
     <nav>
-        <h2>Índice</h2>
+        <!-- <h2>Índice</h2> -->
         <ul>
             <li><a href="#acerca">Acerca de mi</a></li>
             <li><a href="#for_aca">Formación academica</a></li>
@@ -22,9 +26,10 @@
             <li><a href="#expe_pro">Experiencia en Proyectos</a></li>
             <li><a href="#refe_perso">Referencia Personal</a></li>
             <li><a href="#contac">Formulario para contacto</a></li>
+            <li><a href="index.html">Arriba</a></li>
         </ul>
     </nav>
-    <hr>
+
     <section id="acerca">
         <div class="content-area">
             <h2>Acerca de mi</h2>
@@ -36,7 +41,7 @@
 
         </div>
     </section>
-    <hr>
+
     <section id="for_aca">
         <div class="content-area">
             <h2>Formación Academica</h2>
@@ -66,7 +71,7 @@
             </table>
         </div>
     </section>
-    <hr>
+
     <section id="expe_labo">
         <div class="content-area">
             <h2>Experiencia Laboral</h2>
@@ -81,38 +86,38 @@
             </ul>
         </div>
     </section>
-    <hr>
+
     <section id="expe_pro">
         <div class="content-area">
             <h2>Experiencia en Proyectos</h2>
             <ol>
-                <li>Desarrollo de controlador y tarjetas de potencia para cajón eléctrico
+                <li align="justify">Desarrollo de controlador y tarjetas de potencia para cajón eléctrico
                     de semaforización inteligente. <b>Crearme Ingeniería S.A.S.</b></li>
-                <li>Desarrollo de sistema de internet de las cosas para pesaje e
+                <li align="justify">Desarrollo de sistema de internet de las cosas para pesaje e
                     inventario de frutos en cosecha con protocolo de comunicación
                     Zigbee. <b>Crearme Ingeniería S.A.S.</b></li>
-                <li>Desarrollo de alarma comunitaria que ejecuta sonidos de alerta
+                <li align="justify">Desarrollo de alarma comunitaria que ejecuta sonidos de alerta
                     programables por medio de comandos enviados por protocolo de
                     comunicación RF 433. <b>Crearme Ingeniería S.A.S.</b></li>
-                <li>Desarrollo de dispositivo para detección de monóxido de
+                <li align="justify">Desarrollo de dispositivo para detección de monóxido de
                     carbono con conexión a Home Assistant generando reportes y
                     activando un extractor. <b>Crearme Ingeniería S.A.S.</b></li>
-                <li>Diseño de sistema de detección de movimiento en alambrado
+                <li align="justify">Diseño de sistema de detección de movimiento en alambrado
                     perimetral con sensor de medición inercial y comunicación a central
                     por medio de un protocolo LoRa. <b>Crearme Ingeniería S.A.S.</b></li>
-                <li>Desarrollo de sistema de horno de reflujo para soldar PCB’s con
+                <li align="justify">Desarrollo de sistema de horno de reflujo para soldar PCB’s con
                     monitoreo, ejecución y edición de perfiles de soldadura en pagina
                     web.<b>Crearme Ingeniería S.A.S. </b></li>
-                <li>Configuración e implementación de dispositivos de Domótica
+                <li align="justify">Configuración e implementación de dispositivos de Domótica
                     usando la plataforma Home Assistant.<b>Crearme Ingeniería S.A.S.</b></li>
             </ol>
         </div>
     </section>
-    <hr>
+
     <section id="refe_perso">
         <div class="content-area">
             <h2>Referencia Personal</h2>
-            <table border="6">
+            <table border="1">
                 <tr>
                     <th>
                         <p align="center">Nombre</p>
@@ -147,7 +152,7 @@
             </table>
         </div>
     </section>
-    <hr>
+
     <section id="contac">
         <h2 align="center">Formulario para contacto</h2>
         <div class="container">
@@ -156,16 +161,15 @@
                     <br>
                     <legend>Ingresa los datos de contacto</legend>
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos" maxlength="100" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos" maxlength="100"
+                        required>
                     <br>
                     <br>
                     <label for="email">Correo Electrónico</label>
                     <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
-                    <small>Correo para uso de contacto</small>
                     <br>
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="3** *** ****" required>
-                    <small>Telefono de uso de contacto</small>
                     <br>
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Preguntas? ¿Sugerencias?"></textarea>
@@ -176,6 +180,10 @@
             </form>
         </div>
     </section>
+    <hr>
+    <footer>
+        <p align="center">Los datos en este documento son de caracter personal y no publico, derechos reservados</p>
+    </footer>
 </body>
 
 </html>
